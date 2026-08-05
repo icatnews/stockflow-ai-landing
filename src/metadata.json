@@ -1,0 +1,6 @@
+{
+  "name": "StockFlow AI Landing Page",
+  "description": "The Ultimate AI Workflow Suite for Stock Photographers & Creators - Analyze, Prompt, Rank, Sell.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
