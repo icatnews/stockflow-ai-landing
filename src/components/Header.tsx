@@ -67,6 +67,8 @@ export const Header: React.FC<HeaderProps> = ({
           </a>
           <a
             href="https://instantflow.net"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-[#059669] transition-all flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-[#E0D8C9]/70 hover:bg-[#D8CFBF] border border-[#C8BFB0]/80 text-[#221E1A] font-extrabold shadow-xs hover:border-[#059669]/40"
             title="InstantFlow"
           >
