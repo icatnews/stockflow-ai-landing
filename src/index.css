@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #EAE4D9;
+    color: #221E1A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    color: #221E1A;
+  }
+}
+
+/* ==========================================================================
+   NEUMORPHIC WARM CREAM (乳白黃/擬物風) DESIGN SYSTEM
+   ========================================================================== */
+
+/* Main App Outer Frame */
+.neu-frame {
+  background-color: #EAE4D9;
+  border-radius: 28px;
+  box-shadow: 18px 18px 36px #c4bdb1,
+              -18px -18px 36px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Raised Tactile Card */
+.neu-raised {
+  background: #EAE4D9;
+  border-radius: 20px;
+  box-shadow: 8px 8px 18px #ca2b8,
+              -8px -8px 18px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-raised:hover {
+  box-shadow: 12px 12px 24px #c2bbb0,
+              -12px -12px 24px #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Gold Accent Highlight Card */
+.neu-gold-card {
+  background: linear-gradient(135deg, #F0E8DA 0%, #E6DEC8 100%);
+  border-radius: 20px;
+  box-shadow: 10px 10px 22px #c2bbb0,
+              -10px -10px 22px #ffffff;
+  border: 1.5px solid #E0AF4B;
+}
+
+/* Recessed Inset Panel / Input Box */
+.neu-inset {
+  background-color: #E0D8C9;
+  border-radius: 16px;
+  box-shadow: inset 5px 5px 12px #c0b8a8,
+              inset -5px -5px 12px #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Primary Neumorphic Gold Button */
+.neu-gold-btn {
+  background: linear-gradient(135deg, #E0AF4B 0%, #C89632 100%);
+  color: #221E1A;
+  font-weight: 800;
+  border-radius: 14px;
+  box-shadow: 6px 6px 14px #c2bbb0,
+              -6px -6px 14px #ffffff,
+              inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neu-gold-btn:hover {
+  background: linear-gradient(135deg, #EBC05D 0%, #D4A23F 100%);
+  box-shadow: 8px 8px 18px #b8b1a4,
+              -8px -8px 18px #ffffff;
+  transform: translateY(-1.5px);
+}
+
+.neu-gold-btn:active {
+  box-shadow: inset 3px 3px 8px #a89f92,
+              inset -3px -3px 8px #f5ebdc;
+  transform: translateY(0px);
+}
+
+/* Secondary Dark Tactile Button */
+.neu-dark-btn {
+  background: #221E1A;
+  color: #F8F5EE;
+  font-weight: 700;
+  border-radius: 14px;
+  box-shadow: 6px 6px 14px #c2bbb0,
+              -6px -6px 14px #ffffff;
+  transition: all 0.25s ease;
+}
+
+.neu-dark-btn:hover {
+  background: #332D28;
+  color: #E0AF4B;
+  box-shadow: 8px 8px 18px #b8b1a4,
+              -8px -8px 18px #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Neumorphic Active Tab Indicator */
+.neu-active-tab {
+  background: #221E1A;
+  color: #E0AF4B;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Animations */
+@keyframes scan-laser {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+.animate-scan-laser {
+  animation: scan-laser 2.2s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EAE4D9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8BFB0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E0AF4B;
+}
