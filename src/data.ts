@@ -232,52 +232,238 @@ export interface PresetSampleItem {
 
 export const PRESET_SHOWCASE_SAMPLES: PresetSampleItem[] = [
   {
-    id: 'sample-lightbulb',
-    name: 'Light_bulb_hovering_over_laptop.jpg',
-    title: '💡 科技靈感燈泡與筆電',
-    categoryTag: '科技與抽象 AI',
-    badge: '熱門榜首 #01',
-    imageUrl: '/samples/Light_bulb_hovering_over_laptop.jpg',
-    aiStrategy: '這幅視覺作品融合了現代科技與抽象創意。畫面核心是一台打開的筆記型電腦，其上方懸浮著一顆發光的傳統燈泡，象徵著靈感 (Inspiration) 與創新 (Innovation) 的迸發。螢幕湧現數據網絡與幾何圖形，採用深冷藍與溫暖黃暈散景對比。',
-    generalPrompt: 'A cinematic digital illustration of a glowing incandescent light bulb floating above an open laptop keyboard. Colorful digital icons, data streams, and a world map burst out from the screen. The background is a dark, moody blue space filled with vibrant orange and red bokeh light circles. Sharp focus on the bulb and laptop, wide-angle perspective, futuristic technology concept, high contrast, high resolution, 8k.',
-    mjPrompt: 'A futuristic concept of digital innovation, an open laptop on a dark surface with a bright glowing light bulb floating above the keyboard, holographic icons of email, data, and eyes emerging from the screen, cosmic background with blue and orange bokeh effects, cinematic lighting, hyper-realistic, detailed textures, 8k, volumetric lighting --ar 16:9 --v 6.0',
-    bestTitle: 'Digital Innovation and Tech Idea Concept with Glowing Bulb Floating Over Laptop',
-    seoOption1: 'Futuristic Technology Innovation Illustration with Laptop and Light Bulb',
-    seoOption2: 'Global Data Analytics and Artificial Intelligence Creative Idea Concept',
+    id: 'sample-cute-brain',
+    name: 'Cute_fluffy_brain_elves.jpg',
+    title: 'Cute fluffy brain elves',
+    categoryTag: '3D Illustration & AI',
+    badge: '3D #01',
+    imageUrl: '/samples/Cute_fluffy_brain_elves.jpg',
+    aiStrategy: 'A cute, anthropomorphic 3D human brain character with large, expressive glossy eyes. The brain has a soft, fuzzy, plush texture like felt or short fur. The entire image follows a monochromatic sage green color palette. Minimalist composition with the brain centered on a smooth, solid green background. Soft studio lighting with subtle shadows at the base, high-quality 3D digital rendering, whimsical and playful aesthetic.',
+    generalPrompt: 'A cute, anthropomorphic 3D human brain character with large, expressive glossy eyes. The brain has a soft, fuzzy, plush texture like felt or short fur. The entire image follows a monochromatic sage green color palette. Minimalist composition with the brain centered on a smooth, solid green background. Soft studio lighting with subtle shadows at the base, high-quality 3D digital rendering, whimsical and playful aesthetic.',
+    mjPrompt: 'A cute 3D stylized human brain character, large glossy googly eyes, fuzzy soft plush texture, velvet material, sage green monochrome color palette, minimalist studio background, soft diffused lighting, centered composition, clean aesthetic, high detail, Octane render, C4D --ar 9:16 --v 6.0',
+    bestTitle: 'Cute Anthropomorphic 3D Human Brain Character with Soft Plush Fuzzy Texture',
+    seoOption1: 'Sage Green 3D Brain Plush Character Illustration for AI and Mental Wellness',
+    seoOption2: 'Whimsical Minimalist 3D Brain Elf Avatar with Velvet Surface and Big Glossy Eyes',
     keywordsArray: [
-      'light bulb', 'laptop', 'idea', 'innovation', 'technology', 'digital', 'glowing', 'computer',
-      'inspiration', 'future', 'data', 'analytics', 'network', 'cyber', 'concept', 'creative',
-      'futuristic', 'abstract', 'holographic', 'icons', 'email', 'world map', 'bokeh', 'bokeh light',
-      'keyboard', 'illustration', '3d', 'render', 'business', 'solution', 'intelligence', 'artificial',
-      'ai', 'development', 'software', 'screen', 'communication', 'global', 'connectivity', 'bright',
-      'contrast', 'blue', 'orange', 'modern', 'marketing', 'banner', 'background', 'high resolution'
+      'brain', 'cute', 'character', '3d', 'illustration', 'plush', 'fuzzy', 'sage green',
+      'monochrome', 'anthropomorphic', 'eyes', 'googly eyes', 'mind', 'mental health', 'wellness',
+      'psychology', 'ai', 'intelligence', 'creativity', 'idea', 'soft', 'texture', 'velvet',
+      'felt', 'toy', 'mascot', 'avatar', 'minimalist', 'centered', 'green', 'render',
+      'c4d', 'octane', 'studio lighting', 'whimsical', 'playful', 'biology', 'neuroscience',
+      'thinking', 'smart', 'concept', 'digital art', 'clean', 'modern', '3d render'
     ],
     category: '4 (Technology)',
-    score: 98,
+    score: 99,
     photoCoach: {
       shootingGuide: {
-        equipment: '建議相機鏡頭：35mm 或 50mm f/1.8 大光圈定焦鏡，配合穩固三腳架。',
-        lightingSetup: '主光源採 45 度側面暖光投射於主體，背景加設深藍色 LED 氛圍燈及大光圈散景星芒光斑。',
-        compositionTip: '採用三分法將發光燈泡置於畫面黃金交叉點，筆電鍵盤形成自然的空間引導線。',
-        colorPalette: '深琥珀橘 (Warm Amber) 與深海藍 (Deep Navy) 主副色彩對比組合。'
+        equipment: '3D 繪圖與渲染軟體 (Blender / C4D / Octane Render)。',
+        lightingSetup: '柔和棚拍三點式燈光 (3-Point Studio Lighting)，突顯絨毛立體質感。',
+        compositionTip: '單一主體極簡置中構圖，下方微弱接觸陰影強化沉浸真實感。',
+        colorPalette: '鼠尾草綠 (Sage Green) 單色系調色板。'
       },
       qualityCritique: {
-        strengths: '光影對比度極佳，燈泡燈絲亮部細節保留完整，背景散景顆粒極具商業張力。',
-        flawsAndWeaknesses: '筆電鍵盤邊緣若加強局部暗部層次，可減少光暈擴散干擾。',
-        lightingScore: '98/100 • 暖色燈絲與深藍背景對比強烈。',
-        compositionScore: '99/100 • 體積光效果顯著，主體引導極佳。',
-        reshootAdvice: '商業需求極高，適合科技 AI、創業與大數據行銷主視覺。'
+        strengths: '絨毛材質與水汪汪大眼睛視覺吸睛度極高，非常適合 AI 議題與心理健康題材。',
+        flawsAndWeaknesses: '建議可為背景加入微弱的質感粒子或漸層，增加空間層次。',
+        lightingScore: '99/100 • 柔和均勻工作室燈光，材質層次分明。',
+        compositionScore: '98/100 • 置中極簡結構，給予大量留白空間。',
+        reshootAdvice: '絕佳 AI 與創意發想熱門題材，商業圖庫高下載率素材。'
       }
     }
   },
   {
-    id: 'sample-books-laptop',
+    id: 'sample-car-detailer',
+    name: 'Detailer_polishing_red_car_hood.jpg',
+    title: 'Detailer polishing red car hood',
+    categoryTag: 'Automotive & Service',
+    badge: 'Commercial #02',
+    imageUrl: '/samples/Detailer_polishing_red_car_hood.jpg',
+    aiStrategy: 'This image showcases a highly professional automotive detailing process. The composition uses a close-up angle focusing on gloved hands operating a rotary buffer polisher, creating strong visual contrast against deep red metallic paint. Striplight reflections across the glossy hood highlight a mirror finish.',
+    generalPrompt: 'Close-up shot of professional car detailer polishing a glossy red metallic car hood with rotary buffer machine, strip light reflection on reflective mirror finish paint, hands in black nitrile gloves, automotive workshop background, commercial stock photo style --v 6.0 --ar 16:9',
+    mjPrompt: 'Commercial stock photograph of auto detailer buffing glossy red luxury car hood, bright strip light reflections, hands wearing black work gloves holding orbital polisher, professional auto detailing shop background, hyper-realistic, 8k resolution --ar 16:9 --v 6.0',
+    bestTitle: 'Professional Detailer Polishing Glossy Red Metallic Car Hood with Rotary Buffer',
+    seoOption1: 'Auto Detailing Service Buffer Machine Polishing Red Vehicle Hood Close-up',
+    seoOption2: 'Automotive Paint Protection and Mirror Finish Coating Maintenance Concept',
+    keywordsArray: [
+      'detailer', 'car', 'polishing', 'red', 'hood', 'auto detailing', 'buffer', 'polisher',
+      'rotary', 'paint', 'glossy', 'metallic', 'vehicle', 'automotive', 'service', 'maintenance',
+      'workshop', 'garage', 'gloves', 'hands', 'work', 'care', 'shine', 'mirror finish',
+      'reflection', 'striplight', 'coating', 'waxing', 'protection', 'craftsmanship', 'professional',
+      'commercial', 'clean', 'restoration', 'luxury car', 'automobile', 'equipment', 'action'
+    ],
+    category: '3 (Business & Industry)',
+    score: 98,
+    photoCoach: {
+      shootingGuide: {
+        equipment: '全片幅單眼 + 85mm f/1.8 鏡頭，特寫研磨拋光動態。',
+        lightingSetup: '長條燈條 (Strip Light) 鏡面反射，凸顯紅色漆面高質感。',
+        compositionTip: '特寫研磨機與對角車蓋線條，引導視覺至細膩車漆細節。',
+        colorPalette: '艷麗深紅 (Crimson Red) 與專業黑 (Workwear Black)。'
+      },
+      qualityCritique: {
+        strengths: '漆面鏡面反光與研磨機動作感極強，極富商業修車與美容價值。',
+        flawsAndWeaknesses: '可清理周圍微小研磨飛沫，使畫面更加乾淨俐落。',
+        lightingScore: '98/100 • 燈條鏡面高光線條非常專業優美。',
+        compositionScore: '97/100 • 動作對角線張力十足。',
+        reshootAdvice: '汽車美容保養與高階鍍膜服務首選廣告素材。'
+      }
+    }
+  },
+  {
+    id: 'sample-dome-camera',
+    name: 'Dome_security_camera.jpg',
+    title: 'Dome security camera',
+    categoryTag: 'Security & Tech',
+    badge: 'Tech #03',
+    imageUrl: '/samples/Dome_security_camera.jpg',
+    aiStrategy: 'This image uses a dynamic close-up composition, precisely locking focus on a white dome surveillance camera (CCTV) mounted on a rough concrete pillar. Lens details are crisp, displaying glass spherical texture and subtle ambient reflections. The background leverages shallow depth of field from a wide aperture.',
+    generalPrompt: 'Close-up shot of a white dome security CCTV surveillance camera mounted on a concrete wall in an underground parking garage, blurred fluorescent ceiling lights in background, cool industrial aesthetic, sharp lens focus, 8k --v 6.0 --ar 16:9',
+    mjPrompt: 'Modern white dome security camera mounted on concrete column, shallow depth of field, background blurred underground parking lot with cool lighting, crisp lens reflection, surveillance security technology, photorealistic --ar 16:9 --v 6.0',
+    bestTitle: 'White Dome Security Surveillance Camera Mounted on Concrete Wall in Garage',
+    seoOption1: 'CCTV Dome Surveillance Security Camera Close-up with Blurred Background',
+    seoOption2: 'Modern Commercial Property Security Protection and Video Monitoring Concept',
+    keywordsArray: [
+      'dome camera', 'security', 'cctv', 'surveillance', 'camera', 'monitoring', 'protection',
+      'safety', 'concrete', 'garage', 'parking lot', 'lens', 'reflection', 'glass', 'white',
+      'industrial', 'pillar', 'wall', 'tech', 'technology', 'system', 'commercial', 'modern',
+      'shallow depth of field', 'blurred background', 'fluorescent', 'lights', 'urban', 'property'
+    ],
+    category: '4 (Technology)',
+    score: 97,
+    photoCoach: {
+      shootingGuide: {
+        equipment: '50mm 或 85mm 定焦鏡頭，大光圈 f/2.0 營造背景散景。',
+        lightingSetup: '地下停車場頂部冷色日光燈頂光，搭配微弱側光打亮玻璃鏡頭。',
+        compositionTip: '將鏡頭置於畫面黃金焦點，引導背景燈光形成流暢延伸。',
+        colorPalette: '工業灰 (Concrete Grey) 與純淨白 (Camera White)。'
+      },
+      qualityCritique: {
+        strengths: '圓頂玻璃反光細節與背景散景虛化效果極佳，商業科技感強烈。',
+        flawsAndWeaknesses: '混凝土牆面細節可稍微提高對比度增加材質立體感。',
+        lightingScore: '97/100 • 冷色調工業光影，氣氛烘托到位。',
+        compositionScore: '96/100 • 主體對焦極致銳利，散景自然。',
+        reshootAdvice: '安防監控、智慧建築與警政安全題材極佳素材。'
+      }
+    }
+  },
+  {
+    id: 'sample-wooden-gears',
+    name: 'Hands_arranging_wooden_gears.jpg',
+    title: 'Hands arranging wooden gears',
+    categoryTag: 'Business & Innovation',
+    badge: 'Concept #04',
+    imageUrl: '/samples/Hands_arranging_wooden_gears.jpg',
+    aiStrategy: 'This is a conceptual flat lay photograph featuring wooden central gears encircled by hands in colorful attire, symbolizing diversity and teamwork. A clean high-key white background creates a modern minimalist feel. Digital overlays including "E-LEARNING" typography and education icons emphasize the integration of tech and learning.',
+    generalPrompt: 'Top-down flat lay view of multiple diverse hands placing interconnected wooden gears together on a clean white background, teamwork, collaboration, engineering and innovation concept, modern stock photography --ar 16:9 --v 6.0',
+    mjPrompt: 'Conceptual flat lay photograph of hands assembling wooden gear cogwheels, teamwork and mechanical coordination concept, bright high-key white studio backdrop, soft natural shadows, high quality --ar 16:9 --v 6.0',
+    bestTitle: 'Diverse Hands Assembling Interconnected Wooden Gears on White Background',
+    seoOption1: 'Teamwork and Business Innovation Concept with Wooden Gear Cogs Flat Lay',
+    seoOption2: 'Collaborative Problem Solving and Mechanics Concept with People Hands',
+    keywordsArray: [
+      'hands', 'wooden gears', 'gears', 'cogs', 'teamwork', 'collaboration', 'flat lay',
+      'top down', 'white background', 'innovation', 'engineering', 'mechanics', 'connection',
+      'integration', 'diversity', 'cooperation', 'business', 'concept', 'strategy', 'education',
+      'problem solving', 'coordination', 'minimalist', 'clean', 'high key', 'interconnected'
+    ],
+    category: '3 (Business & Industry)',
+    score: 98,
+    photoCoach: {
+      shootingGuide: {
+        equipment: '垂直俯拍 (Top-Down Flat Lay) 支架 + 35mm 定焦鏡頭。',
+        lightingSetup: '雙側大型柔光箱 (Softbox) 提供均勻無死角的高調白光。',
+        compositionTip: '齒輪置於中央，雙手呈放射狀環繞擺放，創造幾何對稱感。',
+        colorPalette: '原木質感 (Natural Wood) 與極簡白 (Studio White)。'
+      },
+      qualityCritique: {
+        strengths: '概念清晰明確，非常適合企業團隊合作、ESG 與工程創新宣傳。',
+        flawsAndWeaknesses: '手部陰影可適度柔化，保持俯拍平面的純淨感。',
+        lightingScore: '98/100 • 明亮均勻高調棚拍光 shadowless。',
+        compositionScore: '98/100 • 俯拍幾何對稱平衡良好。',
+        reshootAdvice: '商業簡報與企業教育訓練絕佳圖庫素材。'
+      }
+    }
+  },
+  {
+    id: 'sample-typing-laptop',
+    name: 'Hands_typing_on_silver_laptop.jpg',
+    title: 'Hands typing on silver laptop',
+    categoryTag: 'Office & Work',
+    badge: 'Workplace #05',
+    imageUrl: '/samples/Hands_typing_on_silver_laptop.jpg',
+    aiStrategy: 'This image displays a highly professional commercial stock style. A low-angle close-up focuses on hands operating a silver laptop, establishing an immersive presence. Shallow depth of field blurs two suit-clad professionals holding documents in the background, accentuating focused productivity.',
+    generalPrompt: 'Low-angle close-up of hands typing on a modern silver laptop keyboard, shallow depth of field with blurred business professionals collaborating in background office setting, natural side window lighting, professional stock photo --ar 16:9 --v 6.0',
+    mjPrompt: 'Authentic workplace photograph, person typing on aluminum laptop keyboard, foreground hands focus, corporate colleagues in suits talking in soft blurred background, sunlit office environment, 8k resolution --ar 16:9 --v 6.0',
+    bestTitle: 'Hands Typing on Silver Laptop Keyboard with Blurred Business Professionals in Office',
+    seoOption1: 'Corporate Workplace Productivity Typing on Laptop Close-up',
+    seoOption2: 'Professional Business Finance and Data Analysis Workspace Interaction',
+    keywordsArray: [
+      'hands', 'typing', 'laptop', 'silver', 'keyboard', 'office', 'business', 'workplace',
+      'productivity', 'corporate', 'professional', 'low angle', 'close up', 'shallow depth of field',
+      'colleagues', 'collaboration', 'suits', 'finance', 'technology', 'computer', 'work',
+      'document', 'window light', 'modern office', 'executive', 'data', 'working'
+    ],
+    category: '3 (Business)',
+    score: 97,
+    photoCoach: {
+      shootingGuide: {
+        equipment: '50mm f/1.4 鏡頭，低角度視角緊扣鍵盤打字動作。',
+        lightingSetup: '大型窗戶側面自然光，為手部與鍵盤拉出優雅輪廓光。',
+        compositionTip: '手部與鍵盤佔據前景 2/3，背景同事保持軟虛化景深。',
+        colorPalette: '銀灰 (Aluminum Silver) 與溫暖辦公室採光。'
+      },
+      qualityCritique: {
+        strengths: '打字真實感與背景團隊氛圍融合自然，商業萬用素材。',
+        flawsAndWeaknesses: '筆電上蓋與螢幕請確保完全無商標或專利 UI 外露。',
+        lightingScore: '97/100 • 柔和自然側光質感優良。',
+        compositionScore: '96/100 • 前景集中，背景層次豐富。',
+        reshootAdvice: '軟體開發、遠距工作與企業官網首頁首選背景圖。'
+      }
+    }
+  },
+  {
+    id: 'sample-handshake',
+    name: 'Handshake_between_businessmen.jpg',
+    title: 'Handshake between businessmen',
+    categoryTag: 'Business & Corporate',
+    badge: 'Corporate #06',
+    imageUrl: '/samples/Handshake_between_businessmen.jpg',
+    aiStrategy: 'This visual work adopts a symmetrical composition centering on a handshake between two suit-clad professionals. A soft blurred city skyline through floor-to-ceiling windows sets an executive tone. A digital holographic world map projection spans the handshake with glowing blue and gold network nodes.',
+    generalPrompt: 'Symmetrical medium shot of two professional businessmen in dark suits shaking hands in front of floor-to-ceiling office window with blurred city skyline background, glowing digital holographic world map overlay, corporate agreement concept --ar 16:9 --v 6.0',
+    mjPrompt: 'Corporate partnership handshake, two executives in suits shaking hands, high rise office window with city view backdrop, digital network holographic overlay connecting hands, professional lighting, 8k resolution --ar 16:9 --v 6.0',
+    bestTitle: 'Business Executives Shaking Hands in High-Rise Office with City View',
+    seoOption1: 'Corporate Partnership Handshake Agreement with Digital Tech Overlay',
+    seoOption2: 'International Global Business Deal and Trust Concept with Shaking Hands',
+    keywordsArray: [
+      'handshake', 'businessmen', 'executives', 'suits', 'corporate', 'agreement', 'partnership',
+      'deal', 'trust', 'office', 'window', 'city skyline', 'high rise', 'holographic', 'world map',
+      'global', 'network', 'connection', 'international', 'collaboration', 'business', 'success',
+      'symmetrical', 'professional', 'finance', 'merger', 'contract'
+    ],
+    category: '3 (Business)',
+    score: 99,
+    photoCoach: {
+      shootingGuide: {
+        equipment: '50mm f/1.8 定焦鏡頭，對焦於雙手握手中心點。',
+        lightingSetup: '窗外自然天光逆光，搭配室內暖色輪廓光，突顯西裝質感。',
+        compositionTip: '中央對稱握手構圖，兩側人物輪廓形成穩固架構。',
+        colorPalette: '深海藍 (Navy Suit) 與夕陽金光 (Golden Hour Glow)。'
+      },
+      qualityCritique: {
+        strengths: '握手姿態與高樓背景展現極強的信任感與國際企業視野。',
+        flawsAndWeaknesses: '可適度微調科技光暈透明度，使其與西裝光影更貼合。',
+        lightingScore: '99/100 • 逆光輪廓光勾勒極佳，大氣磅礡。',
+        compositionScore: '98/100 • 中央對稱，具備極高視覺權威感。',
+        reshootAdvice: '跨國合作、企業簽約與金融投顧必備萬用圖檔。'
+      }
+    }
+  },
+  {
+    id: 'sample-isometric-books',
     name: 'Isometric_books_on_laptop.jpg',
-    title: '📚 數據科學與電子學習',
-    categoryTag: '教育與大數據',
-    badge: '熱銷爆款 #02',
+    title: 'Isometric books on laptop',
+    categoryTag: 'Education & Data',
+    badge: 'E-Learning #07',
     imageUrl: '/samples/Isometric_books_on_laptop.jpg',
-    aiStrategy: '採用等角透視 (Isometric) 展現現代數據科學與數位學習概念。畫面以開展筆記型電腦為底座，上方疊放標註 DATA SCIENCE 與 CODE 的書籍，四周環繞霓虹 UI 圖表。',
+    aiStrategy: 'An isometric 3D illustration centering on an open laptop with colorful books stacked on top labeled "DATA SCIENCE", "FUTURE LEARNING", and "CODE". Vibrant cyan screen glow and floating neon holographic icons and data graphs create a strong futuristic tech mood on a dark gradient backdrop.',
     generalPrompt: 'An isometric 3D digital illustration of an open laptop keyboard with a neat stack of colorful textbooks on top labelled DATA SCIENCE, FUTURE LEARNING, and CODE. Floating neon glowing user interface analytics charts, line graphs, and data icons around the laptop. Dark cyan moody background with soft particle lights, futuristic e-learning concept, high resolution, 8k.',
     mjPrompt: 'Futuristic e-learning concept, isometric view of open laptop with stacked colorful books, neon glowing analytics dashboard, code and data science labels, dark teal background, volumetric lighting, high quality, 8k --ar 16:9 --v 6.0',
     bestTitle: 'Digital Education and Data Science Concept with Laptop and Stack of Books',
@@ -289,336 +475,133 @@ export const PRESET_SHOWCASE_SAMPLES: PresetSampleItem[] = [
       'school', 'university', 'tutorial', 'internet', 'study', 'computer', 'academic',
       'course', 'information', 'analytics', 'software', 'development', 'knowledge',
       'library', 'platform', 'virtual', 'interactive', 'innovative', 'interface',
-      'graphic', 'illustration', 'isometric', 'neon', 'glow', 'background',
-      'professional', 'training', 'skill', 'career', 'intelligence', 'business', 'web', 'research', 'modern'
+      'graphic', 'illustration', 'isometric', 'neon', 'glow', 'background'
     ],
     category: '4 (Technology & Education)',
     score: 99,
     photoCoach: {
       shootingGuide: {
-        equipment: '矢量繪圖軟體或 3D 渲染器（C4D / Blender / Octane Render）。',
-        lightingSetup: '體積光與霓虹邊緣光（Neon Edge Glow），營造發光數位圖表質感。',
-        compositionTip: '精確 45 度等角透視 (Isometric Grid)，保持圖形俐落對齊。',
-        colorPalette: '暗青色 (Teal Navy) 搭配青綠色與粉紫自發光元件。'
+        equipment: '3D 向量繪圖與渲染器 (Blender / Octane Render)。',
+        lightingSetup: '霓虹發光體 (Neon Glow) 與體積光 (Volumetric Light)。',
+        compositionTip: '精確 45 度等角透視 (Isometric Grid)，結構俐落對齊。',
+        colorPalette: '暗青色 (Teal Navy) 搭配粉紫與青綠發光線條。'
       },
       qualityCritique: {
-        strengths: '圖示與字樣清晰無誤，向量線條精準，留白區域適合文字排版。',
-        flawsAndWeaknesses: '書本背面的陰影可略微加深以提升立體深度。',
-        lightingScore: '99/100 • 高對比霓虹色調，向量與 3D 發光質感突出。',
-        compositionScore: '98/100 • 結構完美平衡，角落留白充裕適合疊加文字。',
-        reshootAdvice: '適合線上課程、大數據教學平台及商業圖庫熱門圖素材。'
+        strengths: '數據文字與標題極其清晰，呈現頂級數位學習與大數據教育質感。',
+        flawsAndWeaknesses: '可增加微小浮點顆粒增強數位科技感。',
+        lightingScore: '99/100 • 霓虹發光質感高調吸引眼球。',
+        compositionScore: '98/100 • 等角透視結構完美平衡。',
+        reshootAdvice: '線上課程平台、程式教學與 AI 大數據熱銷圖素材。'
       }
     }
   },
   {
-    id: 'sample-courier',
-    name: 'Handshake_between_businessmen.jpg',
-    title: '📦 電商包裹物流交接',
-    categoryTag: '物流與電商',
-    badge: '高轉換率 #03',
-    imageUrl: '/samples/Handshake_between_businessmen.jpg',
-    aiStrategy: '電商與快遞物流高需求題材。主體明確，焦點集中於快遞員遞交包裹手勢，畫面明亮且專業。無品牌商標問題，通過商業圖庫高審查標準。',
-    generalPrompt: 'Close-up shot of a courier in a blue shirt handing a brown cardboard package to a client in a modern office. Sharp focus on hands and package texture. Bright minimalist interior with green plants in soft background --v 6.0 --ar 3:2',
-    mjPrompt: 'Medium shot tracking forward as a delivery courier hands a brown cardboard package to a smiling customer, natural office lighting, high contrast, 8k --v 6.0',
-    bestTitle: 'Delivery Courier Handing Cardboard Box Package to Customer in Office',
-    seoOption1: 'E-commerce Parcel Logistics Delivery Service Handover Close-up',
-    seoOption2: 'Professional Small Business Shipping and Parcel Delivery Interaction',
+    id: 'sample-lightbulb',
+    name: 'Light_bulb_hovering_over_laptop.jpg',
+    title: 'Light bulb hovering over laptop',
+    categoryTag: 'Technology & AI',
+    badge: 'Hot #08',
+    imageUrl: '/samples/Light_bulb_hovering_over_laptop.jpg',
+    aiStrategy: 'A conceptual high-tech composition featuring a glowing incandescent light bulb floating beside a laptop displaying programming code. Warm bulb glow contrasts against deep blue background tones, accompanied by digital icons for gear, email, and network connectivity, framed by colorful bokeh light spots.',
+    generalPrompt: 'A cinematic digital illustration of a glowing incandescent light bulb floating above an open laptop keyboard. Colorful digital icons, data streams, and a world map burst out from the screen. The background is a dark, moody blue space filled with vibrant orange and red bokeh light circles. Sharp focus on the bulb and laptop, wide-angle perspective, futuristic technology concept, high contrast, high resolution, 8k.',
+    mjPrompt: 'A futuristic concept of digital innovation, an open laptop on a dark surface with a bright glowing light bulb floating above the keyboard, holographic icons of email, data, and eyes emerging from the screen, cosmic background with blue and orange bokeh effects, cinematic lighting, hyper-realistic, detailed textures, 8k, volumetric lighting --ar 16:9 --v 6.0',
+    bestTitle: 'Digital Innovation and Tech Idea Concept with Glowing Bulb Floating Over Laptop',
+    seoOption1: 'Futuristic Technology Innovation Illustration with Laptop and Light Bulb',
+    seoOption2: 'Global Data Analytics and Artificial Intelligence Creative Idea Concept',
     keywordsArray: [
-      'delivery', 'courier', 'package', 'cardboard', 'box', 'handover', 'logistics', 'e-commerce',
-      'shipping', 'service', 'office', 'customer', 'business', 'parcel', 'hand', 'transfer',
-      'professional', 'retail', 'supply chain', 'fulfillment', 'express', 'mail', 'post',
-      'receiving', 'client', 'worker', 'distribution', 'commercial', 'store', 'transportation',
-      'order', 'purchase', 'container', 'box', 'worker', 'smiling', 'interior', 'indoor',
-      'modern', 'authentic', 'occupational', 'job', 'activity', 'workflow', 'concept', 'trust'
+      'light bulb', 'laptop', 'idea', 'innovation', 'technology', 'digital', 'glowing', 'computer',
+      'inspiration', 'future', 'data', 'analytics', 'network', 'cyber', 'concept', 'creative',
+      'futuristic', 'abstract', 'holographic', 'icons', 'email', 'world map', 'bokeh', 'bokeh light',
+      'keyboard', 'illustration', '3d', 'render', 'business', 'solution', 'intelligence', 'artificial',
+      'ai', 'development', 'software', 'screen', 'communication', 'global', 'connectivity'
     ],
-    category: '3 (Business & Industry)',
-    score: 99,
-    photoCoach: {
-      shootingGuide: {
-        equipment: '全片幅單眼 + 85mm f/1.4 人像鏡頭，捕捉真實手部細節與景深。',
-        lightingSetup: '高調柔和自然光，搭配柔光傘補足快遞員手部與紙箱紋理。',
-        compositionTip: '特寫交接動作，紙箱置於中央三分線上，背景綠植溫暖虛化。',
-        colorPalette: '牛皮紙原色 (Kraft Brown) 與快遞藍 (Courier Blue) 品牌色。'
-      },
-      qualityCritique: {
-        strengths: '焦點精準停留在紙箱纖維與交接雙手，無任何潛在商標侵權風險。',
-        flawsAndWeaknesses: '背景可稍微減少雜物，讓眼神更集中於物流交接動作。',
-        lightingScore: '99/100 • 商業棚拍級均勻光影，無刺眼陰影線。',
-        compositionScore: '98/100 • 包裹遞交手勢形成極佳的引導線。',
-        reshootAdvice: '絕佳熱銷素材！請確保服裝及紙箱無任何商標外露即可直接上架。'
-      }
-    }
-  },
-  {
-    id: 'sample-ai-robot',
-    name: 'Cute_fluffy_brain_elves.jpg',
-    title: '🤖 智慧醫療與 AI 機器人',
-    categoryTag: 'AI 醫療科技',
-    badge: '精選範例 #04',
-    imageUrl: '/samples/Cute_fluffy_brain_elves.jpg',
-    aiStrategy: '融合現代智慧醫療與人形 AI 機器人助手概念。醫師與光學半透明機器人共同研討 3D 全像人體器官掃描圖，象徵先進精準醫療與科技人文結合。',
-    generalPrompt: 'A female doctor in a white coat consulting with a friendly humanoid medical AI robot looking at a floating blue holographic 3D brain scan in a high-tech modern hospital room, cinematic lighting, ultra-detailed, 8k.',
-    mjPrompt: 'Futuristic medical technology, female doctor and sleek white AI robot examining floating blue hologram of brain scan, bright sterile hospital laboratory, volumetric sunlight, 8k, photorealistic --ar 16:9 --v 6.0',
-    bestTitle: 'Female Doctor with AI Medical Robot Analyzing Holographic Brain Scan',
-    seoOption1: 'Futuristic AI Healthcare Innovation with Doctor and Assistant Robot',
-    seoOption2: 'High Tech Digital Medicine Concept with Holographic Brain Diagnostics',
-    keywordsArray: [
-      'doctor', 'medical', 'ai', 'robot', 'healthcare', 'hologram', 'brain', 'scan',
-      'hospital', 'futuristic', 'technology', 'diagnostic', 'science', 'consultation', 'innovation', 'digital',
-      'assistant', 'humanoid', 'laboratory', 'medicine', 'health', 'clinic', 'smart', 'intelligence',
-      'artificial', 'research', 'patient', 'examination', 'professional', 'female', 'white coat', 'screen',
-      '3d', 'holographic', 'data', 'biotechnology', 'cyborg', 'nanotechnology', 'modern', 'clean', 'bright',
-      'stethoscope', 'interface', 'care', 'treatment', 'future', 'discovery', 'solution', 'precision'
-    ],
-    category: '7 (Healthcare & Science)',
-    score: 97,
-    photoCoach: {
-      shootingGuide: {
-        equipment: '50mm f/1.2 鏡頭，配合高階 3D 合成或預先繪製的全像投影片。',
-        lightingSetup: '高潔淨無塵室冷白光 (5600K)，搭配全像投影處的藍綠色發光補光。',
-        compositionTip: '醫師與機器人分置兩側形成對角平衡，全像光學掃描像置於中央。',
-        colorPalette: '純潔白 (Clinic White) 與醫學藍 (Holo Cyan)。'
-      },
-      qualityCritique: {
-        strengths: '呈現高品質未來科技感，光學投影細節真實自然。',
-        flawsAndWeaknesses: '機器人材質金屬反光若再收斂 10%，畫面會更具親和力。',
-        lightingScore: '97/100 • 潔淨醫學高調光影，搭配鮮明全像投影對比。',
-        compositionScore: '96/100 • 醫護人員與 AI 助手互動良好。',
-        reshootAdvice: '生醫科技與藥廠買家高度喜愛，商業吸引力極高。'
-      }
-    }
-  },
-  {
-    id: 'sample-green-energy',
-    name: 'Hands_arranging_wooden_gears.jpg',
-    title: '🌱 永續綠能與太陽能電廠',
-    categoryTag: 'ESG 綠能永續',
-    badge: '高需求趨勢 #05',
-    imageUrl: '/samples/Hands_arranging_wooden_gears.jpg',
-    aiStrategy: '年度搜尋暴增 +290% 的 ESG 永續環保題材。夕陽黃金時刻照射廣袤的太陽能板矩陣，工程師手持平板記錄數據，主題宏大且商業渲染力強。',
-    generalPrompt: 'A female clean energy engineer holding a digital tablet inspecting vast solar panel field array during golden hour sunset, dramatic warm sunlight flare, wind turbines in background, high contrast, wide-angle cinematic shot.',
-    mjPrompt: 'ESG clean energy engineer inspecting solar panels at sunset, wind turbines in distance, golden hour warm lighting, high detailed photorealism, commercial stock photography style --ar 16:9 --v 6.0',
-    bestTitle: 'Solar Panel Array Farm Inspection by Renewable Energy Female Engineer at Sunset',
-    seoOption1: 'ESG Clean Sustainable Solar Energy Farm and Green Technology Concept',
-    seoOption2: 'Renewable Power Infrastructure Inspection with Solar Panels and Wind Turbines',
-    keywordsArray: [
-      'solar panels', 'renewable energy', 'engineer', 'clean energy', 'sunset', 'golden hour', 'green technology', 'esg',
-      'sustainability', 'solar power', 'wind turbines', 'farm', 'field', 'inspection', 'tablet', 'female',
-      'photovoltaic', 'eco friendly', 'carbon neutral', 'climate change', 'environment', 'electric', 'grid', 'future',
-      'alternative', 'power plant', 'generation', 'sustainable', 'industry', 'worker', 'professional', 'sky', 'clouds',
-      'sun flare', 'technology', 'infrastructure', 'energy transition', 'green economy', 'conservation', 'resources', 'innovation',
-      'outdoors', 'modern', 'efficiency', 'smart grid', 'development', 'ecology', 'nature'
-    ],
-    category: '3 (Business & Industry)',
+    category: '4 (Technology)',
     score: 98,
     photoCoach: {
       shootingGuide: {
-        equipment: '24mm 超廣角鏡頭，低角度俯仰拍攝，突出太陽能陣列的大氣景深。',
-        lightingSetup: '利用日落黃金時刻 (Golden Hour) 逆光透射，形成暖金光暈與太陽能板鏡面反射。',
-        compositionTip: '透過太陽能板排列的消失點幾何線條引導觀眾視覺至工程師主體。',
-        colorPalette: '暖黃金與太陽能晶片深藍對比色。'
+        equipment: '35mm 定焦鏡頭搭配 3D 合成發光元件。',
+        lightingSetup: '暖橘發光電燈泡與深藍背景色溫大反差對比。',
+        compositionTip: '三分法將發光燈泡置於視覺焦點，筆電鍵盤形成自然延伸。',
+        colorPalette: '深琥珀橘 (Warm Amber) 與深海藍 (Deep Navy)。'
       },
       qualityCritique: {
-        strengths: '日落光暈非常迷人，展現強烈情緒溫暖感與企業責任氣勢。',
-        flawsAndWeaknesses: '工作安全帽上請確保無任何工程公司品牌標誌。',
-        lightingScore: '98/100 • 黃金時刻逆光效果戲劇感十足。',
-        compositionScore: '97/100 • 太陽能板幾何消失線延伸良好。',
-        reshootAdvice: '企業 ESG 報告必備高頻下載素材，前景可預留標題排版空間。'
+        strengths: '冷暖色調強烈對比，燈絲與散景顆粒極富商業張力。',
+        flawsAndWeaknesses: '筆電鍵盤細節可適度壓低光暈以增強對焦銳利度。',
+        lightingScore: '98/100 • 琥珀光與深藍背景冷暖對比極佳。',
+        compositionScore: '99/100 • 主體引導流暢大氣。',
+        reshootAdvice: '科技創新、創業主題與 AI 行銷主視覺熱銷款。'
       }
     }
   },
   {
-    id: 'sample-business-meeting',
-    name: 'Detailer_polishing_red_car_hood.jpg',
-    title: '💼 跨國企業戰略簡報',
-    categoryTag: '商業與團隊',
-    badge: '經典必備 #06',
-    imageUrl: '/samples/Detailer_polishing_red_car_hood.jpg',
-    aiStrategy: '多元族群現代商務團隊圍繞木質會議桌專注研討大數據分析圖表。自然採光透入高層玻璃辦公室，呈現信任、專業與高生產力視覺。',
-    generalPrompt: 'Diverse team of young corporate executives in modern glass office collaborating over laptop analytics screen, smiling authentic interaction, soft natural window light, depth of field.',
-    mjPrompt: 'Authentic modern business team meeting in sunlit open plan office, diverse corporate group discussing strategy, soft warm interior lighting, high resolution stock photo --ar 16:9 --v 6.0',
-    bestTitle: 'Diverse Business Team Collaborating in Sunlit Modern Conference Office Room',
-    seoOption1: 'Corporate Strategy Discussion and Data Analytics Meeting with Executive Team',
-    seoOption2: 'Professional Office Collaboration and Tech Startup Brainstorming Session',
+    id: 'sample-mooncakes',
+    name: 'Mooncakes.jpg',
+    title: 'Mooncakes',
+    categoryTag: 'Food & Culture',
+    badge: 'Festive #09',
+    imageUrl: '/samples/Mooncakes.jpg',
+    aiStrategy: 'A high-texture macro photograph centering on a traditional Cantonese mooncake with intricate floral engravings and golden glossy sheen. Shallow depth of field blurs ceramic tea cups, red dates, and goji berries in the background, bathed in warm directional afternoon sunlight across a bamboo mat.',
+    generalPrompt: 'Macro close-up photograph of traditional golden Cantonese mooncakes with intricate pattern engravings on bamboo mat, tea cup and dried goji berries in soft blurred background, warm directional sunlight, mid-autumn festival food photography --ar 3:2 --v 6.0',
+    mjPrompt: 'Traditional Chinese mooncakes on rustic wooden tray, warm afternoon window sunlight, steam rising from ceramic tea cup, dark moody oriental aesthetic, macro texture details, 8k photorealistic --ar 3:2 --v 6.0',
+    bestTitle: 'Traditional Golden Cantonese Mooncakes with Tea and Mid-Autumn Festival Decor',
+    seoOption1: 'Mid-Autumn Festival Mooncake Macro Food Photography with Tea',
+    seoOption2: 'Traditional Chinese Bakery Mooncakes on Bamboo Mat with Warm Sunlight',
     keywordsArray: [
-      'business', 'team', 'meeting', 'collaboration', 'office', 'diverse', 'corporate', 'executives',
-      'laptop', 'strategy', 'analytics', 'discussion', 'professional', 'group', 'startup', 'colleagues',
-      'brainstorming', 'working', 'communication', 'glass office', 'modern', 'interior', 'conference', 'partnership',
-      'success', 'people', 'young', 'multicultural', 'career', 'employment', 'management', 'planning', 'data',
-      'technology', 'growth', 'finance', 'consulting', 'interaction', 'cooperation', 'workplace', 'company', 'leader',
-      'presentation', 'dashboard', 'desk', 'smiling', 'authentic', 'commercial'
-    ],
-    category: '3 (Business)',
-    score: 96,
-    photoCoach: {
-      shootingGuide: {
-        equipment: '50mm f/1.4 鏡頭，捕捉團隊眼神互動與自然專注表情。',
-        lightingSetup: '高樓落地窗自然大側光為主，搭配室內溫暖平衝 Fill Light。',
-        compositionTip: '中景環形構圖，以筆電數據螢幕為對焦重點，背景人物維持淺景深。',
-        colorPalette: '商務灰藍與原木暖黃。'
-      },
-      qualityCritique: {
-        strengths: '多元族群面貌真實自然，無擺拍僵硬感，商業吸引力十足。',
-        flawsAndWeaknesses: '筆電螢幕上的圖表可替換為更高對比的商業 UI 畫面。',
-        lightingScore: '96/100 • 柔和窗光呈現健康自然膚色。',
-        compositionScore: '95/100 • 團隊層次豐富，焦點明確。',
-        reshootAdvice: '畫面左上角留白區域適合廣告文案寫作，商業價值高。'
-      }
-    }
-  },
-  {
-    id: 'sample-gourmet-coffee',
-    name: 'Hands_typing_on_silver_laptop.jpg',
-    title: '☕ 精品咖啡手沖與生活美學',
-    categoryTag: '美食與飲食',
-    badge: '美學特選 #07',
-    imageUrl: '/samples/Hands_typing_on_silver_laptop.jpg',
-    aiStrategy: '暗調沉穩質感咖啡視覺。熱水由細口壺淋入咖啡濾紙，水氣與咖啡香氣蒸騰而上，搭配磨豆機與復古木桌，呈現高質感咖啡館風格。',
-    generalPrompt: 'Macro shot of barista hand pouring hot water from a gooseneck kettle onto ground coffee in a glass dripper, steam rising, warm dark rustic wooden coffee shop table background, cinematic moody lighting, sharp detail.',
-    mjPrompt: 'Moody dark food photography of artisanal pour over coffee drip, steam rising from fresh brew, warm directional sunlight, gooseneck kettle, high contrast, 8k, detailed texture --ar 3:2 --v 6.0',
-    bestTitle: 'Barista Hand Pouring Hot Water with Gooseneck Kettle for Pour Over Coffee Brew',
-    seoOption1: 'Artisanal Coffee Shop Barista Brew Process with Steam Drip Glass Filter',
-    seoOption2: 'Dark Rustic Moody Food Photography of Fresh Coffee Bean Brewing',
-    keywordsArray: [
-      'coffee', 'pour over', 'barista', 'brew', 'kettle', 'steam', 'drip', 'filter',
-      'hot', 'beverage', 'cafe', 'coffee shop', 'rustic', 'wooden table', 'dark moody', 'macro',
-      'artisan', 'specialty coffee', 'handcraft', 'aroma', 'morning', 'drink', 'fresh', 'beans',
-      'preparation', 'glass dripper', 'gooseneck', 'water', 'pour', 'lifestyle', 'gourmet', 'relax',
-      'cozy', 'warm lighting', 'detail', 'texture', 'espresso', 'roast', 'caffeine', 'food photography',
-      'break', 'refreshment', 'minimalist', 'aesthetic', 'hospitality', 'restaurant', 'table'
+      'mooncakes', 'mooncake', 'mid-autumn festival', 'chinese', 'traditional', 'bakery', 'tea',
+      'goji berries', 'bamboo mat', 'golden', 'macro', 'food photography', 'oriental', 'culture',
+      'festive', 'delicacy', 'pastry', 'warm sunlight', 'close up', 'texture', 'engraving'
     ],
     category: '6 (Food & Drink)',
     score: 98,
     photoCoach: {
       shootingGuide: {
-        equipment: '100mm f/2.8 Macro 微距鏡頭，高速度快門 (1/500s) 凝結水滴細節。',
-        lightingSetup: '單一硬質輪廓光 (Rim Light) 從背側 45 度打入，精確突出蒸氣與水流細節。',
-        compositionTip: '微距特寫濾杯水流噴濺點，背景深色木質進行暗角處理。',
-        colorPalette: '深濃縮咖啡棕與黑木暗調。'
+        equipment: '100mm f/2.8 Macro 微距鏡頭，特寫月餅雕花紋理。',
+        lightingSetup: '午後斜射溫暖自然光，打亮金黃餅皮油亮質感。',
+        compositionTip: '月餅置於前景中央，背景茶具與枸杞形成溫馨文化氛圍。',
+        colorPalette: '金黃餅皮 (Golden Brown) 與竹編原色 (Bamboo Tan)。'
       },
       qualityCritique: {
-        strengths: '背光精確將熱氣蒸氣顆粒輪廓勾勒得極其生動誘人。',
-        flawsAndWeaknesses: '壺嘴邊緣若能增加少許金屬反光，細節會更加精緻。',
-        lightingScore: '98/100 • 輪廓光極佳地勾勒出蒸氣與水滴微觀細節。',
-        compositionScore: '97/100 • 精準微距對焦營造高雅咖啡美學。',
-        reshootAdvice: '社群媒體、精品咖啡雜誌與餐飲品牌極愛之圖片類型。'
+        strengths: '雕花紋理與油脂光澤細緻逼真，傳統節慶文化氛圍濃郁。',
+        flawsAndWeaknesses: '背景物件可適度簡化，為設計師預留更多加字留白區。',
+        lightingScore: '98/100 • 溫暖自然日光完美凸顯食品食慾感。',
+        compositionScore: '97/100 • 微距質感極佳。',
+        reshootAdvice: '中秋節慶、傳統糕餅與東方文化廣告熱銷素材。'
       }
     }
   },
   {
-    id: 'sample-fitness-smartwatch',
-    name: 'Dome_security_camera.jpg',
-    title: '🏃 智慧手錶與運動健康',
-    categoryTag: '運動與健康',
-    badge: '運動爆款 #08',
-    imageUrl: '/samples/Dome_security_camera.jpg',
-    aiStrategy: '戶外晨跑運動員抬起手腕檢視智慧手錶心率與跑步里程，背景晨曦光暈點綴，汗水與專注眼神傳遞出堅持與健康生活方式。',
-    generalPrompt: 'Close-up on athlete arm wearing modern smartwatch checking heart rate metric during morning outdoor jog, golden sunrise glow, sweat drops on skin, energetic atmosphere, high speed shutter.',
-    mjPrompt: 'Action commercial stock photo of marathon runner checking digital smartwatch metrics at sunrise, athletic gear, sweat drops, warm dramatic lens flare, 8k resolution --ar 16:9 --v 6.0',
-    bestTitle: 'Athlete Runner Checking Heart Rate Smartwatch Metric During Sunrise Jog',
-    seoOption1: 'Smart Watch Fitness Tracking Concept with Outdoor Sports Runner',
-    seoOption2: 'Wearable Technology Health Analytics and Cardio Workout Session',
+    id: 'sample-surfboards',
+    name: 'Surfboards_on_sandy_beach.jpg',
+    title: 'Surfboards on sandy beach',
+    categoryTag: 'Travel & Lifestyle',
+    badge: 'Outdoor #10',
+    imageUrl: '/samples/Surfboards_on_sandy_beach.jpg',
+    aiStrategy: 'A minimalist aerial drone shot of colorful surfboards aligned symmetrically on a sandy beach. Divided horizontally into light sand, rainbow-ordered surfboards, and clear blue ocean waves with sharp midday shadows and vibrant summer energy.',
+    generalPrompt: 'Top-down aerial drone photograph of vibrant colorful surfboards arranged neatly in a row on a golden sandy beach next to turquoise ocean waves, bright summer sunlight, crisp shadows, tropical vacation aesthetic --ar 16:9 --v 6.0',
+    mjPrompt: 'Aerial view of surfboards lined up on beach shoreline, ocean water turquoise waves crashing on sand, colorful summer surf aesthetic, sharp shadows, high resolution stock photo --ar 16:9 --v 6.0',
+    bestTitle: 'Aerial Top-Down View of Colorful Surfboards Lined Up on Sandy Beach',
+    seoOption1: 'Summer Tropical Beach Aerial Drone Photo with Surfboards and Turquoise Sea',
+    seoOption2: 'Surfing Lifestyle Vacation Concept with Ocean Waves and Surfboards on Sand',
     keywordsArray: [
-      'smartwatch', 'athlete', 'runner', 'jogging', 'fitness', 'health', 'heart rate', 'metrics',
-      'wearable', 'technology', 'workout', 'cardio', 'sunrise', 'morning', 'outdoor', 'sports',
-      'exercise', 'training', 'marathon', 'active', 'lifestyle', 'wrist', 'device', 'app',
-      'tracker', 'performance', 'sweat', 'energy', 'vitality', 'wellness', 'man', 'woman',
-      'stamina', 'motivation', 'gear', 'wearable tech', 'digital', 'screen', 'pulse', 'distance',
-      'calorie', 'step counter', 'fit', 'body', 'healthy', 'recreation', 'coastal path'
+      'surfboards', 'surfboard', 'beach', 'sand', 'sandy', 'aerial', 'drone', 'top down',
+      'ocean', 'sea', 'turquoise', 'waves', 'summer', 'vacation', 'tropical', 'colorful',
+      'line up', 'symmetry', 'travel', 'lifestyle', 'outdoor', 'recreation', 'water sports'
     ],
-    category: '10 (Sports & Health)',
-    score: 97,
+    category: '10 (Sports & Travel)',
+    score: 98,
     photoCoach: {
       shootingGuide: {
-        equipment: '70-200mm f/2.8 望遠鏡頭，高速連拍壓縮日出背景。',
-        lightingSetup: '利用晨光 Sunrise 逆光形成肌膚汗水高光亮斑，手錶螢幕使用補光板防發黑。',
-        compositionTip: '手臂抬起形成斜向對角動態線，手錶介面佔據黃金交叉點。',
-        colorPalette: '晨曦暖橘與活力黑矽膠。'
+        equipment: '航拍無人機 90 度垂直俯拍 (Vertical Top-Down Drone Shot)。',
+        lightingSetup: '頂部強烈正午陽光，為衝浪板拉出俐落短陰影。',
+        compositionTip: '沙灘、衝浪板與海浪三分橫向結構，色彩呈彩虹對稱排列。',
+        colorPalette: '金黃沙灘 (Golden Sand) 與碧藍海水 (Turquoise Ocean)。'
       },
       qualityCritique: {
-        strengths: '汗水顆粒與晨光高光立體感十足，充滿體能挑戰衝勁。',
-        flawsAndWeaknesses: '請檢查手錶顯示螢幕圖案是否涉及專利介面侵權。',
-        lightingScore: '97/100 • 晨光逆光亮點刻畫肌理與汗水細緻。',
-        compositionScore: '96/100 • 動態斜線構圖傳遞出節奏感與速度。',
-        reshootAdvice: '穿戴式裝置與健康 App 商業廣告最熱門素材。'
-      }
-    }
-  },
-  {
-    id: 'sample-3d-finance-dashboard',
-    name: 'Mooncakes.jpg',
-    title: '📊 3D 立體金融與數位貨幣',
-    categoryTag: '金融與 3D 插畫',
-    badge: '高單價 #09',
-    imageUrl: '/samples/Mooncakes.jpg',
-    aiStrategy: '3D 立體透視 (Isometric) 金融分析與數位貨幣金幣上升圖表。極具科技感的藍金漸層，適合銀行、Fintech 廣告與加密貨幣投資平台。',
-    generalPrompt: 'Isometric 3D render of financial analytics growth chart with floating gold coins, digital bank cards, and glowing bar graphs on dark blue glossy surface, clean lighting, high detail.',
-    mjPrompt: '3D isometric fintech dashboard, gold coins rising, financial stock market growth graph, neon blue technology background, Octane render style, highly detailed 8k --ar 16:9 --v 6.0',
-    bestTitle: 'Isometric 3D Fintech Analytics Dashboard with Gold Coins and Growth Bar Chart',
-    seoOption1: 'Digital Banking and Financial Stock Market Investment Growth Concept',
-    seoOption2: 'Cryptocurrency Trading Platform 3D Graphic with Analytics Dashboard',
-    keywordsArray: [
-      'fintech', 'finance', '3d', 'isometric', 'dashboard', 'analytics', 'growth', 'chart',
-      'gold coins', 'cryptocurrency', 'bitcoin', 'investment', 'stock market', 'banking', 'digital',
-      'money', 'wealth', 'profit', 'trading', 'economy', 'business', 'technology', 'graph',
-      'revenue', 'currency', 'success', 'future', 'crypto', 'blockchain', 'capital', 'exchange',
-      'commercial', 'illustration', 'render', 'octane', 'glossy', 'blue', 'gold', 'financial',
-      'management', 'market', 'payment', 'credit card', 'app', 'ui', 'concept', 'innovation'
-    ],
-    category: '3 (Finance & Tech)',
-    score: 99,
-    photoCoach: {
-      shootingGuide: {
-        equipment: 'Octane / Redshift 3D 光線追蹤渲染器（非實拍相機）。',
-        lightingSetup: '高質感金屬反射物理材質，雙向藍金漸層主控燈光。',
-        compositionTip: '標準 3D 等角投影格線，金幣與上升柱狀圖呈現由左至右遞增。',
-        colorPalette: '皇室精緻藍 (Royal Blue) 與 24K 閃耀金 (24K Gold)。'
-      },
-      qualityCritique: {
-        strengths: '光線追蹤金屬材質極致擬真，柱狀圖高升意象極具說服力。',
-        flawsAndWeaknesses: '背景暗部可加入微弱的網絡點線粒子以增強科技氛圍。',
-        lightingScore: '99/100 • 物理反射極致完美，極富商業奢華質感。',
-        compositionScore: '98/100 • 經典金融增長透視，深受企業買家青睞。',
-        reshootAdvice: '全球金融 SaaS、銀行廣告與加密貨幣平台高單價熱銷款。'
-      }
-    }
-  },
-  {
-    id: 'sample-minimal-interior',
-    name: 'minimalist_nordic_workspace.jpg',
-    title: '🏡 極簡木質居家與遠距工作',
-    categoryTag: '生活風格與室內',
-    badge: '溫暖質感 #10',
-    imageUrl: '/samples/minimalist_nordic_workspace.jpg',
-    aiStrategy: '北歐極簡質感 Home Office 工作區。溫暖晨光透過薄紗窗簾灑在木質桌面上，桌上擺放著 MacBook、綠色多肉植物與陶瓷咖啡杯，呈現安寧專注的質感生活。',
-    generalPrompt: 'Nordic minimalist home office workspace with wooden desk, laptop, ceramic mug, and green succulent plant in warm morning sunlight through sheer curtains, clean cozy indoor interior photography.',
-    mjPrompt: 'Minimalist Scandinavian home office desk, warm morning sunlight casting sheer curtain shadows, laptop, coffee cup, indoor potted plant, soft beige wall, editorial style stock photo --ar 16:9 --v 6.0',
-    bestTitle: 'Minimalist Nordic Home Office Workspace with Wooden Desk and Laptop in Sunlit Room',
-    seoOption1: 'Cozy Remote Work Home Desk Setup with Soft Morning Sunlight',
-    seoOption2: 'Scandinavian Interior Design Workspace with Laptop and Potted Plant',
-    keywordsArray: [
-      'home office', 'workspace', 'minimalist', 'nordic', 'scandinavian', 'desk', 'laptop', 'wooden',
-      'sunlight', 'morning', 'curtain', 'shadow', 'plant', 'succulent', 'ceramic mug', 'coffee',
-      'cozy', 'interior', 'remote work', 'freelancer', 'lifestyle', 'peaceful', 'clean', 'simple',
-      'design', 'home', 'working', 'aesthetic', 'beige', 'neutral tones', 'soft lighting', 'indoor',
-      'quiet', 'focus', 'creativity', 'study', 'stationery', 'notebook', 'modern', 'calm',
-      'warmth', 'atmosphere', 'comfort', 'decor', 'architecture', 'room', 'table'
-    ],
-    category: '2 (Buildings & Interiors)',
-    score: 97,
-    photoCoach: {
-      shootingGuide: {
-        equipment: '35mm 廣角鏡頭，俯拍或平拍捕捉整體空間靜謐感。',
-        lightingSetup: '天然陽光穿過百葉窗或薄紗窗簾，於木質桌面投射幾何光影條紋。',
-        compositionTip: '極簡留白，主體 MacBook 與咖啡杯適度置於畫面右下方。',
-        colorPalette: '大地暖米色 (Warm Beige) 與原木天然紋理。'
-      },
-      qualityCritique: {
-        strengths: '窗簾幾何陰影增添強烈藝術質感，畫面清新寧靜。',
-        flawsAndWeaknesses: '筆電上蓋的品牌 Logo 必須透過修圖徹底撫平抹除。',
-        lightingScore: '97/100 • 柔和漫射自然日光，勾勒優雅質感生活。',
-        compositionScore: '98/100 • 頂部與周圍留白充裕，非常適合雜誌刊頭排版。',
-        reshootAdvice: '遠距工作、個人部落格與質感生活用品買家必備款。'
+        strengths: '色彩繽紛且幾何排列對稱性極佳，夏日度假氣息迎面而來。',
+        flawsAndWeaknesses: '海水與沙灘交界處可微調高光，保留浪花細節。',
+        lightingScore: '98/100 • 正午天光對比鮮明，色彩飽和。',
+        compositionScore: '99/100 • 幾何排列俯拍，視覺震撼力十足。',
+        reshootAdvice: '旅遊海報、夏日特賣與戶外運動主題首選圖片。'
       }
     }
   }
