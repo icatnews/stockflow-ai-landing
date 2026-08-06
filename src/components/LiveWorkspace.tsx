@@ -1171,7 +1171,7 @@ const normalizeSampleItem = (item: any): PresetSampleItem => {
     title: item.title || matchingPreset?.title || '自訂上傳照片',
     categoryTag: item.categoryTag || matchingPreset?.categoryTag || '圖庫商業攝影',
     badge: item.badge || matchingPreset?.badge || '商業級',
-    imageUrl: item.imageUrl || matchingPreset?.imageUrl || '',
+    imageUrl: matchingPreset?.imageUrl || item.imageUrl || '',
     aiStrategy: item.aiStrategy || matchingPreset?.aiStrategy || '',
     generalPrompt: item.generalPrompt || item.mjPrompt || matchingPreset?.generalPrompt || '',
     mjPrompt: item.mjPrompt || item.generalPrompt || matchingPreset?.mjPrompt || '',
@@ -1221,8 +1221,8 @@ export const LiveWorkspace: React.FC<LiveWorkspaceProps> = ({
 
   // Selected sample index
   const [selectedSampleIndex, setSelectedSampleIndex] = useState<number>(0);
-  const WORKSPACE_SAMPLES_KEY = 'prompt_stock_workspace_samples_v4';
-  const WORKSPACE_LOCK_KEY = 'prompt_stock_workspace_locked_v4';
+  const WORKSPACE_SAMPLES_KEY = 'prompt_stock_workspace_samples_v5';
+  const WORKSPACE_LOCK_KEY = 'prompt_stock_workspace_locked_v5';
 
   // List of samples (preset showcase + custom uploaded photos, persisted in localStorage)
   const [samplesList, setSamplesList] = useState<PresetSampleItem[]>(() => {
