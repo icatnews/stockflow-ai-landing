@@ -1167,7 +1167,7 @@ const normalizeSampleItem = (item: any): PresetSampleItem => {
   const matchingPreset = PRESET_SHOWCASE_SAMPLES.find((p) => p.id === item.id);
   return {
     id: item.id || `sample-${Math.random().toString(36).substr(2, 9)}`,
-    name: item.name || matchingPreset?.name || 'custom_photo.jpg',
+    name: matchingPreset?.name || item.name || 'custom_photo.jpg',
     title: item.title || matchingPreset?.title || '自訂上傳照片',
     categoryTag: item.categoryTag || matchingPreset?.categoryTag || '圖庫商業攝影',
     badge: item.badge || matchingPreset?.badge || '商業級',
