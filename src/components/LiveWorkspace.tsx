@@ -1164,35 +1164,36 @@ const normalizeSampleItem = (item: any): PresetSampleItem => {
   if (!item || typeof item !== 'object') {
     return PRESET_SHOWCASE_SAMPLES[0];
   }
+  const matchingPreset = PRESET_SHOWCASE_SAMPLES.find((p) => p.id === item.id);
   return {
     id: item.id || `sample-${Math.random().toString(36).substr(2, 9)}`,
-    name: item.name || 'custom_photo.jpg',
-    title: item.title || '自訂上傳照片',
-    categoryTag: item.categoryTag || '圖庫商業攝影',
-    badge: item.badge || '商業級',
-    imageUrl: item.imageUrl || '',
-    aiStrategy: item.aiStrategy || '',
-    generalPrompt: item.generalPrompt || item.mjPrompt || '',
-    mjPrompt: item.mjPrompt || item.generalPrompt || '',
-    bestTitle: item.bestTitle || '',
-    seoOption1: item.seoOption1 || '',
-    seoOption2: item.seoOption2 || '',
-    keywordsArray: Array.isArray(item.keywordsArray) ? item.keywordsArray : [],
-    category: item.category || '4 (Technology)',
-    score: typeof item.score === 'number' ? item.score : 85,
+    name: item.name || matchingPreset?.name || 'custom_photo.jpg',
+    title: item.title || matchingPreset?.title || '自訂上傳照片',
+    categoryTag: item.categoryTag || matchingPreset?.categoryTag || '圖庫商業攝影',
+    badge: item.badge || matchingPreset?.badge || '商業級',
+    imageUrl: item.imageUrl || matchingPreset?.imageUrl || '',
+    aiStrategy: item.aiStrategy || matchingPreset?.aiStrategy || '',
+    generalPrompt: item.generalPrompt || item.mjPrompt || matchingPreset?.generalPrompt || '',
+    mjPrompt: item.mjPrompt || item.generalPrompt || matchingPreset?.mjPrompt || '',
+    bestTitle: item.bestTitle || matchingPreset?.bestTitle || '',
+    seoOption1: item.seoOption1 || matchingPreset?.seoOption1 || '',
+    seoOption2: item.seoOption2 || matchingPreset?.seoOption2 || '',
+    keywordsArray: Array.isArray(item.keywordsArray) && item.keywordsArray.length > 0 ? item.keywordsArray : (matchingPreset?.keywordsArray || []),
+    category: item.category || matchingPreset?.category || '4 (Technology)',
+    score: typeof item.score === 'number' ? item.score : (matchingPreset?.score || 85),
     photoCoach: {
       shootingGuide: {
-        equipment: item.photoCoach?.shootingGuide?.equipment || '建議相機鏡頭：35mm 或 50mm f/1.8 定焦鏡。',
-        lightingSetup: item.photoCoach?.shootingGuide?.lightingSetup || '主光源採 45 度側面軟光，背景輔以氣氛燈。',
-        compositionTip: item.photoCoach?.shootingGuide?.compositionTip || '採用三分法構圖，保持主體清晰突出。',
-        colorPalette: item.photoCoach?.shootingGuide?.colorPalette || '高對比冷暖色調，突顯商業質感。',
+        equipment: item.photoCoach?.shootingGuide?.equipment || matchingPreset?.photoCoach?.shootingGuide?.equipment || '建議相機鏡頭：35mm 或 50mm f/1.8 定焦鏡。',
+        lightingSetup: item.photoCoach?.shootingGuide?.lightingSetup || matchingPreset?.photoCoach?.shootingGuide?.lightingSetup || '主光源採 45 度側面軟光，背景輔以氣氛燈。',
+        compositionTip: item.photoCoach?.shootingGuide?.compositionTip || matchingPreset?.photoCoach?.shootingGuide?.compositionTip || '採用三分法構圖，保持主體清晰突出。',
+        colorPalette: item.photoCoach?.shootingGuide?.colorPalette || matchingPreset?.photoCoach?.shootingGuide?.colorPalette || '高對比冷暖色調，突顯商業質感。',
       },
       qualityCritique: {
-        strengths: item.photoCoach?.qualityCritique?.strengths || '主題明確，整體對焦清晰。',
-        flawsAndWeaknesses: item.photoCoach?.qualityCritique?.flawsAndWeaknesses || '部分區域光影過曝或構圖裁切較緊湊。',
-        lightingScore: item.photoCoach?.qualityCritique?.lightingScore || '8.5 / 10',
-        compositionScore: item.photoCoach?.qualityCritique?.compositionScore || '8.2 / 10',
-        reshootAdvice: item.photoCoach?.qualityCritique?.reshootAdvice || '建議調整視角，給予主體適當留白空間。',
+        strengths: item.photoCoach?.qualityCritique?.strengths || matchingPreset?.photoCoach?.qualityCritique?.strengths || '主題明確，整體對焦清晰。',
+        flawsAndWeaknesses: item.photoCoach?.qualityCritique?.flawsAndWeaknesses || matchingPreset?.photoCoach?.qualityCritique?.flawsAndWeaknesses || '部分區域光影過曝或構圖裁切較緊湊。',
+        lightingScore: item.photoCoach?.qualityCritique?.lightingScore || matchingPreset?.photoCoach?.qualityCritique?.lightingScore || '8.5 / 10',
+        compositionScore: item.photoCoach?.qualityCritique?.compositionScore || matchingPreset?.photoCoach?.qualityCritique?.compositionScore || '8.2 / 10',
+        reshootAdvice: item.photoCoach?.qualityCritique?.reshootAdvice || matchingPreset?.photoCoach?.qualityCritique?.reshootAdvice || '建議調整視角，給予主體適當留白空間。',
       }
     }
   };
