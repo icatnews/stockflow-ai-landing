@@ -1087,14 +1087,13 @@ const getWorkspaceT = (lang: Language) => {
 
     editModeTitle: isEn ? '✍️ Free Editing & Custom Mode:' : isCn ? '✍️ 自由编辑与自定义模式：' : '✍️ 自由編輯與自訂模式：',
     editModeSub: isEn
-      ? 'You can delete unwanted images, upload custom photos, and edit all titles, prompts, and 49 IPTC tags. Click "Save & Lock" when finished!'
+      ? 'You can delete unwanted images and edit all titles, prompts, and 49 IPTC tags. Click "Save & Lock" when finished!'
       : isCn
-      ? '您可以删除下方任意不需要的图片、上传专属图片、并直接修改所有标题、提示词与 49 个 IPTC 标签。编辑完毕请务必点击“保存并锁定”！'
-      : '您可以刪除下方任意不需要的圖片、上傳專屬圖片、並直接修改所有標題、提示詞與 49 個 IPTC 標籤。編輯完畢請務必點擊「儲存並鎖定」！',
-    uploadNewPhoto: isEn ? 'Upload New Photo' : isCn ? '上传新图片' : '上傳新圖片',
+      ? '您可以删除下方任意不需要的图片，并直接修改所有标题、提示词与 49 个 IPTC 标签。编辑完毕请务必点击“保存并锁定”！'
+      : '您可以刪除下方任意不需要的圖片，並直接修改所有標題、提示詞與 49 個 IPTC 標籤。編輯完畢請務必點擊「儲存並鎖定」！',
     saveAndLockBtn: isEn ? 'Save & Lock' : isCn ? '保存并锁定' : '儲存並鎖定',
 
-    selectOrUpload: isEn ? 'Select or upload image for analysis:' : isCn ? '选择或上传图片进行拆解：' : '選擇或上傳圖片進行拆解：',
+    selectOrUpload: isEn ? 'Select image for analysis:' : isCn ? '选择圖片進行拆解：' : '選擇圖片進行拆解：',
     uploadedCustomPhoto: isEn ? 'Custom Uploaded Photo' : isCn ? '已上传专属图片' : '已上傳專屬圖片',
     sharedSample: isEn ? '100% Shared Sample' : isCn ? '预设展示范例' : '預設展示範例',
     customTag: isEn ? 'Custom' : isCn ? '自订' : '自訂',
@@ -1293,9 +1292,6 @@ export const LiveWorkspace: React.FC<LiveWorkspaceProps> = ({
       console.error('Failed to save lock state to localStorage', e);
     }
   }, [isLocked]);
-
-  // File input ref for custom image upload
-  const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   // Strategy Brain dataset pool rotation index
   const [strategyPoolIndex, setStrategyPoolIndex] = useState<number>(0);
@@ -1686,20 +1682,6 @@ export const LiveWorkspace: React.FC<LiveWorkspaceProps> = ({
           </div>
         </div>
 
-        {/* Hidden File Input */}
-        <input
-          type="file"
-          ref={fileInputRef}
-          onChange={(e) => {
-            if (e.target.files) {
-              handleFilesUpload(e.target.files);
-            }
-          }}
-          accept="image/*"
-          multiple
-          className="hidden"
-        />
-
         {/* Workspace Container */}
         <div className="bg-[#0A090D] border border-zinc-800 rounded-3xl p-6 sm:p-8 text-white shadow-2xl">
           
@@ -1710,21 +1692,9 @@ export const LiveWorkspace: React.FC<LiveWorkspaceProps> = ({
               {/* Left Column: Sample Selector & Image Frame */}
               <div className="lg:col-span-5 flex flex-col gap-4">
                 
-                {/* Image Display Frame with Drag and Drop Support */}
+                {/* Image Display Frame */}
                 <div
-                  onDragOver={(e) => e.preventDefault()}
-                  onDrop={(e) => {
-                    e.preventDefault();
-                    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-                      handleFilesUpload(e.dataTransfer.files);
-                    }
-                  }}
-                  className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 aspect-[16/10] sm:aspect-[4/3] flex items-center justify-center group shadow-lg cursor-pointer"
-                  onClick={() => {
-                    if (currentSample.id.startsWith('custom-')) {
-                      fileInputRef.current?.click();
-                    }
-                  }}
+                  className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 aspect-[16/10] sm:aspect-[4/3] flex items-center justify-center group shadow-lg"
                 >
                   <SampleGraphic sampleId={currentSample.id} imageUrl={currentSample.imageUrl} />
 
@@ -1745,21 +1715,13 @@ export const LiveWorkspace: React.FC<LiveWorkspaceProps> = ({
                   </div>
                 </div>
 
-                {/* Image Gallery List & Upload Button */}
+                {/* Image Gallery List */}
                 <div>
                   <div className="flex items-center justify-between mb-2.5">
                     <p className="text-xs font-mono font-bold text-zinc-400 flex items-center gap-1.5">
                       <Layers className="w-3.5 h-3.5 text-emerald-400" />
                       <span>{t.selectOrUpload}</span>
                     </p>
-                    
-                    <button
-                      onClick={() => fileInputRef.current?.click()}
-                      className="px-2.5 py-1 rounded-lg bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-500/40 text-emerald-300 font-mono text-[11px] font-extrabold flex items-center gap-1.5 transition-all shadow-sm"
-                    >
-                      <Plus className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>{t.uploadNewPhoto}</span>
-                    </button>
                   </div>
 
                   <div className="grid grid-cols-1 gap-2 max-h-[360px] overflow-y-auto pr-1">
